@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" ng-app="CMHAApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="topcoat/css/topcoat-mobile-light.min.css" rel="stylesheet">
+	
+		
+    <link href="css/styles.css" rel="stylesheet">
+	<title>CMHA QUICK GUIDE</title>
+ 
+</head>
+
+<body>
+
+  <div id="CMHAApp">
+	  
+	 
+	  <div id="intro-container">
+		  
+		   <div class="loader">
+			   <img src="img/loader.gif"/>
+		   </div>
+		  
+		   <div class="intro-info-screen">
+			   <div class="inner-wrapper">
+				   
+               <div class="intro-item">   
+			   <h1>GENERAL INFO & REFERRAL CALL</h1>
+			   <div class="lg-number"><a href="tel:905-451-2123">905.451.2123</a></div>
+			   </div> 
+
+			   <div class="intro-item">   
+			   <h1>IN CRISIS? CALL</h1>
+			   <div class="lg-number"><a href="tel:905.278.9036">905.278.9036</a></div>
+			   <div class="lg-number"><a href="tel:1.888.811.222">1.888.811.222</a> <span class="sub-font">(Caledon)</span></div>
+			   </div>
+			   
+			   <div class="intro-item">   
+			   <h1>WEBSITE</h1>
+			   <div class="lg-number"><a href="http://peel.cmha.ca/247CSP">peel.cmha.ca/247CSP</a></div>
+			   </div>
+			   
+			   <div class="intro-item">   
+			   <h1>QUICK GUIDE</h1>
+			   <div class="md-number">
+				  <a class="deeplink-no-open" href="#abuse">Locate mental health and addictions resources in Peel Region and Dufferin County.</a>
+			   </div>
+			   </div>
+			   
+			  <!--  <div class="intro-item lt">   
+			   <h1>YOUTH SERVICES</h1>
+			   <div class="md-number">
+				   <a class="deeplink" href="#youth-services">Locate youth mental health and addictions resources in Peel Region and Dufferin County.</a>
+			   </div>
+			   </div> -->
+			   
+			   </div><!-- / END inner-wrapper -->
+			   
+		   </div><!-- / END intro-info-screen -->
+		  
+		   <div class="branding"><img src="img/logo.jpg"/></div>
+	  </div><!-- / END intro-container -->
+	   
+	  <div class="section" ng-controller="ModelViewController">
+		  <ul>
+			  <li id="abuse">
+				  <a href="#">ABUSE</a> 
+				  <div class="data-block">
+				   <div class="item" ng-repeat="item in Abuse" ng-include="'partials/ServiceTemplate.html'" repeat-done="layoutReady()" >
+					 
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="addictions">
+				  <a href="#">ADDICTIONS</a>
+				  <div class="data-block">
+				   <div class="item" ng-repeat="item in Addictions" ng-include="'partials/ServiceTemplate.html'"  >
+					 
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="bereavment">
+				 <a href="#">BEREAVEMENT</a>
+				  <div class="data-block">
+				   <div class="item" ng-repeat="item in Bereavment" ng-include="'partials/ServiceTemplate.html'" >
+					  
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  
+			  </li>
+			  <li id="community-health-centres">
+				 <a href="#">COMMUNITY HEALTH CENTRES</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in CommunityHealth" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+				  
+			  </li>
+			  
+			   <li id="counselling">
+				  <a href="#">COUNSELLING</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in Counselling" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			   </li>
+			  
+			  
+			  <li id="crisis-services">
+				  <a href="#">CRISIS SERVICES</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in CrisisServices" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="culturally-based-services">
+				  <a href="#">CULTURALLY BASED SERVICES</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in Culturally" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="distress-lines">
+				  <a href="#">DISTRESS LINES</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in DisressLines" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="employment-vacational">
+				  <a href="#">EMPLOYMENT/VOCATIONAL</a>
+			      <div class="data-block">
+				  <div class="item" ng-repeat="item in EmploymentVocational" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->	  
+			  </li>
+			  <li id="family-support">
+				  <a href="#">FAMILY SUPPORT</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in FamilySupport" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->	
+			  </li>
+			  <li id="finacial-support">
+				  <a href="#">FINANCIAL SUPPORT</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in FinancialSupport" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->	
+			  </li>
+			  <li id="food-banks">
+				  <a href="#">FOOD BANKS</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in FoodBanks" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="government-health-system">
+				  <a href="#">GOVERNMENT/HEALTH SYSTEM</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in GovernmentHealth" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  
+			  <li id="homelessness">
+				  <a href="#">HOMELESSNESS</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in Shelters" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="hospital-services">
+				  <a href="#">HOSPITAL SERVICES</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in HospitalServices" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				   </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="housing">
+				  <a href="#">HOUSING</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in Housing" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="information-and-referral">
+				  <a href="#">INFORMATION AND REFERRAL</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in InformationReferral" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="legal-advocacy">
+				  <a href="#">LEGAL/ADVOCACY</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in LegalAdvocacy" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			   
+			  <li id="peer-support-self-help">
+				  <a href="#">PEER SUPPORT/SELF HELP</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in PeerSupport" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="senior-services">
+				  <a href="#">SENIOR SERVICES</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in SeniorServices" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="shelters">
+				  <a href="#">SHELTERS</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in Shelters" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="youth-services">
+				  <a href="#">YOUTH</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in Youth" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+			  <li id="social-recreation">
+				  <a href="#">SOCIAL/RECREATION</a>
+				  <div class="data-block">
+				  <div class="item" ng-repeat="item in SocialRecreation" ng-include="'partials/ServiceTemplate.html'" >
+					    
+				  </div><!-- / END ITEM -->
+				  </div><!-- / END DATA BLOCK -->
+			  </li>
+		  </ul>
+		  
+	  </div>
+	  
+  </div><!-- END NAMESPACE -->
+	
+   <script>
+        var CMHA = this.CMHA = {};
+        CMHA.version = '0.0.0';
+    </script>
+  
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-touch.js"></script>
+    <script src="lib/angular-resource.js"></script>
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/angular-route.js"></script>
+	<script src="lib/ui.tap.js"></script>
+	<script src="js/CMHAController.js"></script>
+	<script src="js/RouteConfig.js"></script>
+	<script src="js/CMHA.js"></script>
+	<script>
+    var Model = angular.module('CMHAApp', ['ngRoute','ngAnimate','CMHAControllers','RouteConfig']).directive('repeatDone', function() {
+        return function(scope, element, attrs) {
+            if (scope.$last) { 
+                scope.$eval(attrs.repeatDone);
+            }
+        }
+    }).directive('foobar', [function factory() {
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: 'partials/ServiceTemplate.html',
+        scope: {
+            "var": "="
+        }
+    };
+   }]);
+</script>
+  
+</body>
+</html>
