@@ -267,7 +267,8 @@
     </script>
   
     <script src="lib/jquery-1.10.2.min.js"></script>
-    <script src="lib/angular.js"></script>
+    <script src="js/CMHA.js"></script> 
+    <!-- <script src="lib/angular.js"></script>
     <script src="lib/angular-touch.js"></script>
     <script src="lib/angular-resource.js"></script>
     <script src="lib/angular-animate.js"></script>
@@ -275,24 +276,25 @@
 	<script src="lib/ui.tap.js"></script>
 	<script src="js/CMHAController.js"></script>
 	<script src="js/RouteConfig.js"></script>
-	<script src="js/CMHA.js"></script>
+	<script src="js/CMHA.js"></script> -->
 	<script>
-    var Model = angular.module('CMHAApp', ['ngRoute','ngAnimate','CMHAControllers','RouteConfig']).directive('repeatDone', function() {
-        return function(scope, element, attrs) {
-            if (scope.$last) { 
-                scope.$eval(attrs.repeatDone);
-            }
-        }
-    }).directive('foobar', [function factory() {
-    return {
-        restrict: 'E',
-        replace: true,
-        templateUrl: 'partials/ServiceTemplate.html',
-        scope: {
-            "var": "="
-        }
-    };
-   }]);
+	var app = new CMHA.App(this);
+   //  var Model = angular.module('CMHAApp', ['ngRoute','ngAnimate','CMHAControllers','RouteConfig']).directive('repeatDone', function() {
+   //      return function(scope, element, attrs) {
+   //          if (scope.$last) { 
+   //              scope.$eval(attrs.repeatDone);
+   //          }
+   //      }
+   //  }).directive('foobar', [function factory() {
+   //  return {
+   //      restrict: 'E',
+   //      replace: true,
+   //      templateUrl: 'partials/ServiceTemplate.html',
+   //      scope: {
+   //          "var": "="
+   //      }
+   //  };
+   // }]);
 </script>
   
 </body>

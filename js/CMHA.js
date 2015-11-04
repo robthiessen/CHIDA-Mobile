@@ -22,7 +22,7 @@ var App = CMHA.App = (function () {
 	         
 			// SET UP ITEM OPTIONS EVENTS 
 		    this.optionEvents();
-			
+			console.log( "HERE " );
 			
 		  },
 		  
