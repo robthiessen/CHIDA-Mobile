@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget id="com.phonegap.chma" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>CMHA - Mobile</name>
+    <name>CMHA QUICK GUIDE</name>
     <description>
-        CMHA - Mobile
+        CMHA QUICK GUIDE
     </description>
     <author email="rob@robthiessen.com" href="http://robthiessen.com">
         Rob Thiessen
