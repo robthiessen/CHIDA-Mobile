@@ -152,25 +152,26 @@ body {
 	width: 100%;
 }
 #CMHAApp .section ul li {
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    color: #fff;
-    font-family: arial;
-    font-size: 20px;
-    font-weight: bold;
-    list-style: outside none none;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    padding: 5px 10px;
-    width: 89%;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	color: #fff;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	list-style: outside none none;
+	margin-left: 5px;
+	margin-right: 20px;
+	margin-top: 0px;
+	padding: 8px 10px;
+	width: 89%;
+	position: relative;
 }
 #CMHAApp .data-block {
-    background-color: #fff;
-    margin-left: -30px;
-    padding: 20px 20px 20px 80px;
-    width: 100%;
-	display:none;
+	background-color: #fff;
+	margin-left: -30px;
+	padding: 20px 30px 0px 95px;
+	width: 100%;
+	display: none;
 }
 #CMHAApp .data-block .item {
     margin-bottom: 0;
@@ -216,20 +217,20 @@ body {
 #CMHAApp .section a:visited{
 	color: #fff;
 	font-family:arial;
-	font-size:18px;
+	font-size:16px;
     text-decoration:none;
 }
 #CMHAApp .item a:hover{
 	color: #fff;
 	font-family:arial;
-	font-size:18px;
+	font-size:16px;
     text-decoration:none;
 }
 
 .section li a:link{
 	color: #fff;
 	font-family:arial;
-	font-size:18px;
+	font-size:16px;
     text-decoration:none;
 	display:inline-table;
 	width: 100%;
@@ -279,6 +280,16 @@ h3,h5{
 }
 
 
+.arrow {
+	position: absolute;
+	right: 0px;
+	width: 15px;
+	top: 5px;
+}
+.arrow img {
+	width: 100%;
+}
+
 /***********************************************************************************************************
 *
 * MEDIA QUERIES / BREAK POINTS
@@ -291,10 +302,6 @@ h3,h5{
 	#CMHAApp #intro-container {
 	min-height: 900px;
 	}
-	
-	#CMHAApp .section ul li {
-    width: 80%;
-    }
 	
 	#CMHAApp .phone-number {
     display: block;
@@ -329,11 +336,33 @@ h3,h5{
 	#CMHAApp .intro-item {
 	padding: 10px;
 	}
+
+	#CMHAApp .intro-info-screen h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	#CMHAApp .intro-info-screen {
+		width: 85%;
+		margin-top: 35px;
+	}
 	
 }
 
 
+@media screen and (max-width: 320px) { 
 
+	#CMHAApp .intro-info-screen h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	#CMHAApp .intro-info-screen {
+		width: 85%;
+		margin-top: 35px;
+	}
+
+}
 
 
 

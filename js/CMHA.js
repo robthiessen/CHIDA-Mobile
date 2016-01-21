@@ -55,21 +55,21 @@ var App = CMHA.App = (function () {
 				 
 				 if($( this ).hasClass( "open" )){
 					 $( this ).addClass( "closed" );
+					 $(this).find('.arrow img').attr('src','img/arrow-down.png');
 					 $( this ).removeClass( "open" );
 					 open = false; 
 				 }else{
 					 $( this ).removeClass( "closed" );
 					 $( this ).addClass( "open" );
+					 $(this).find('.arrow img').attr('src','img/arrow-up.png');
 					 open = true;
 				 }
 				 
 				 if(open){
-					 setTimeout(function ( ){
-                     $(t).slideDown();
+				 	 $(t).slideDown();
 				     $(li).css({'border-width':'0px'});
-					 
+					 setTimeout(function ( ){
 					 $('html, body').animate({ scrollTop: $('#'+target).offset().top  }, 1000);
-					 
 					 },300);
 				 }
 				  
@@ -80,14 +80,18 @@ var App = CMHA.App = (function () {
 				 var target = $(this).attr('href');
 				 $('.data-block').hide();
 				 $(target).find('.data-block').slideDown();
+				 setTimeout(function ( ){
 				 $('html, body').animate({ scrollTop: $(target).offset().top  }, 1000);
+				 },300);
 			 });
 			 
 			 $('.deeplink-no-open').on('click',function (e) {
 				 e.preventDefault();
 				 var target = $(this).attr('href');
 				 $('.data-block').hide();
+				 setTimeout(function ( ){
 				 $('html, body').animate({ scrollTop: $(target).offset().top  }, 1000);
+				 },300);
 			 });
 			 
 			 
@@ -99,7 +103,7 @@ var App = CMHA.App = (function () {
 		  */
 		  loadData : function (id,data) {
 			  
-			//console.log(div + " ::::::: " + target );  
+			console.log(id );  
 			 $("#"+id).find('.data-block').html('');
 			for(var i = 0; i < data.length; i++ ){
 				var item = this.template(data[i]);
@@ -113,6 +117,7 @@ var App = CMHA.App = (function () {
 		  template : function (item) {
               
               var tmp = '<div class="item"><h3>'+item.title+'</h3>';
+              console.log(item.category + " :: >> " + item.title);
 
               if(item.featured){
               	tmp += '<div class="item-featured"></div>';
