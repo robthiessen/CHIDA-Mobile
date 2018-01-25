@@ -18,12 +18,12 @@ var Data = CMHA.Data = (function () {
 
 		 var Services = [
 	            {"category": "abuse", "title": "Assaulted Women’s Helpline", "phone": "416-863-0511", "tollFree":"1-866-863-0511",  "email":""},
-				{"category": "abuse", "title": "Caledon Dufferin Victim Services", "phone": "519-942-1452", "tollFree":"1-888-743-6496", "mobile":"905-951-3838", "email":"info@cdvs.ca"},
+				{"category": "abuse", "title": "Caledon Dufferin Victim Services", "phone": "519-942-1452", "tollFree":"1-888-743-6496", "mobile":"905-951-3838", "email":"info@cdvs.ca","ShortText":"Free, one-to-one, confidential assistance 24 hours a day, 7 days a week, to support individuals affected by crime or tragic circumstances."},
 				{"category": "abuse", "title": "Catholic Cross-cultural Services / Violence Against Women", "ShortText": "Individual counselling and group support for immigrant women victims of assault/abuse.", "phone": "905-457-7740", "mobile":"905-951-3838", "email":"rbynoe@ccspeel.org"},
 				{"category": "abuse", "title": "Chantel’s Place",  "phone": "905-848-7580 x2548"},
 				{"category": "abuse", "title": "Dufferin Sexual Abuse Helpline",  "phone": "519-942-1980"},
 				{"category": "abuse", "title": "Family Transition Place", "phone": "905-584-4357 (Peel)", "mobile":"519-941-4357 (Dufferin)","tollFree":"1-800-265-9178","website":"www.familytransitionplace.ca"},
-				{"category": "abuse", "title": "Hope 24/7 / Sexual Assault / Rape Crisis Centre", "phone": "905-792-0821", "tollFree":"1-800-810-0180","website":"www.hope247.ca"},
+				{"category": "abuse", "title": "Hope 24/7 / Sexual Assault / Rape Crisis Centre", "phone": "905-792-0821", "tollFree":"1-800-810-0180","website":"www.hope247.ca","ShortText":"Clinical intervention and the prevention of sexual abuse and assault. Helping survivors move from cope to hope."},
  				{"category": "abuse", "title": "Interim Place - South (Women & Children)", "phone": "905-403-0864", "website":"www.womensadvocatesouth@intermplace.com"},
 				{"category": "abuse", "title": "Interim Place - North (Women & Children)", "phone": "905-676-8515", "website":"www.womensadvocatenorth@intermplace.com"},
 				{"category": "abuse", "title": "Peel Children’s Aid Society","phone": "905-363-6131"},
@@ -229,12 +229,17 @@ var Data = CMHA.Data = (function () {
 				{"category": "housing", "title": "Support Housing in Peel (SHIP)", "phone": "905-795-8742", "email":"info@shipshey.ca"},
 
 
+
+				{"category": "informationReferral", "title": "Walk-Ins Welcome Hurontario Street, Brampton.", "phone": "314-7700"},
+
+
+
 				{"category": "informationReferral", "title": "211 Peel", "phone": "211"},
 				{"category": "informationReferral", "title": "Brampton Neighbourhood Resource Centre", "phone": "905-452-1262", "website":"bnrc.org"},
 				{"category": "informationReferral", "title": "Caledon Community Services", "phone": "905-951-2300", "email":"info@ccs4u.org"},
 				{"category": "informationReferral", "title": "Centre for Addiction & Mental Health R. Samuel McLaughlin Info Line", "phone": "416-595-6111","tollFree":"1-800-463-6273", "email":"camh.net"},
 				{"category": "informationReferral", "title": "CMHA Peel Information and Referral", "phone": "905-451-2123", "email":"info@cmhapeel.ca"},
-				
+
 				{"category": "informationReferral", "title": "Community Care Access Centre", "phone": "310-CCAC (2222)", "website":"healthcareathome.ca"},
 				{"category": "informationReferral", "title": "Consumer/Survivor Info Resource Centre", "phone": "416-595-2882", "email":"csinfo@camh.ca"},
 				{"category": "informationReferral", "title": "Dixie-Bloor Neighbourhood Services", "phone": "905-629-1873", "email":"info@dixiebloor.ca"},
@@ -251,6 +256,10 @@ var Data = CMHA.Data = (function () {
 				
 				{"category": "legalAdvocacy", "title": "ARCH Advocacy Resource Centre", "phone": "416-482-8255", "website":"archdisabilitylaw.ca"},
 				{"category": "legalAdvocacy", "title": "Associated Youth Services of Peel", "phone": "905-890-5222", "website":"aysp.ca","featured":"true"},
+
+				{"category": "legalAdvocacy", "title": "CMHA Peel Dufferin Mental Health and Justice Services", "phone": "905-456-4700", "tollFree":"519-941-0465","website":"www.cmhapeeldufferin.ca","featured":"true"},
+
+
 				{"category": "legalAdvocacy", "title": "CMHA Peel Court Support Services", "phone": "905-456-4700 x5663 and x5666 "},
 				{"category": "legalAdvocacy", "title": "Community Legal Education Ontario (CLEO)", "phone": "416-408-4420", "website":"www.cleo.on.ca/en"},
 				{"category": "legalAdvocacy", "title": "Elizabeth Fry Society", "phone": "905-459-1315", "email":"efry@efrypeelhalton.ca"},	
@@ -344,13 +353,10 @@ var Data = CMHA.Data = (function () {
 
 	     }
 	 
-	   
-
     }
 	  
    return Data;	
 	
    })();
-
 
 }).call(this);

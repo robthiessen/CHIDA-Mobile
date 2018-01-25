@@ -47,8 +47,10 @@ var App = CMHA.App = (function () {
 				 var target = $(this).parent().attr('id');
 				 var open = false; 
 				 var id = $(this).parent().attr('id');
-				 scope.loadData(id,scope.data.getData(id));
-				 
+
+				 if(!$(this).hasClass('founders')){
+				 	scope.loadData(id,scope.data.getData(id));
+				 }
 				  
 				 $('.data-block').slideUp(299);
 			     $('.section li').css({'border-width':'2px'});
