@@ -32,7 +32,7 @@ body {
 
 #CMHAApp #intro-container {
 	position:relative;
-	min-height:970px;
+	min-height:1060px;
 	max-width:640px;
 	background-image:url(../img/bg.jpg);
 	background-size:contain;
@@ -94,6 +94,7 @@ body {
 	font-weight:bold;
 	padding: 0px;
 	margin: 0px;
+	margin-bottom: 15px;
 }
 #CMHAApp .intro-info-screen .md-number{
 	font-size:26px;
@@ -302,6 +303,13 @@ h3,h5{
 	position: relative;
 	width: 90%;
 	margin: auto;
+}
+
+.yellow--text {
+	color: #b3d235;
+	font-size: 22px !important;
+	margin: 0px;
+    margin-top: -8px;
 }
 
 .white--text {

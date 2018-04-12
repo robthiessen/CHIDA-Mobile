@@ -97,7 +97,7 @@ var Data = CMHA.Data = (function () {
 				{"category": "counselling", "title": "Vita Centre", "ShortText":"For pregnant / parenting youth","phone": "905-502-7933", "email":"deborah@vitamanor.org"},
 				
 
-				{"category": "crisisServices", "title": "24.7 Crisis Support Peel","phone": "905-278-9036  ", "tollFree":"(Caledon) 1-888-811-2222"},
+				{"category": "crisisServices", "title": "24.7 Crisis Support Peel Dufferin","phone": "905-278-9036  ", "tollFree":"(Caledon) 1-888-811-2222"},
 				{"category": "crisisServices", "title": "408 - Help Line / 24-7 / Crisis Support Line","phone": "416 408 4357"},
 				{"category": "crisisServices", "title": "Community Torchlight Crisis Line", "ShortText":"Guelph / Wellington / Dufferin","phone": "519-821-0140 (Crisis)", "tollFree":"519-821-3760 (Distress)"},
 				{"category": "crisisServices", "title": "Family Transition Place / Crisis Line","phone": "1-800-265-9178"},
@@ -202,6 +202,12 @@ var Data = CMHA.Data = (function () {
 				{"category": "governmentHealth", "title": "Region of Peel (Customer Service)", "phone": "905-791-7800","featured":"true"},
 				{"category": "governmentHealth", "title": "Service Ontario - Brampton, Caledon and Mississauga", "phone": "1-866-532-3161"},
 				{"category": "governmentHealth", "title": "Telehealth / Free medical advice", "phone": "1-866-790-0000"},
+
+				{"category": "homeless", "title": "Lakeshore Community Outreach Centre, The Compass", "phone": "905-274-9309"},
+				{"category": "homeless", "title": "Peel Outreach Program & Peel Street Helpline /Peel Outreach Team", "phone": "1-877-848-8481 x2","email":"peeloutreachteam@peelregion.ca","ShortText":"A mobile team, offering short-term support, 7 days a week, to individuals and families who are homeless or at inninent risk of homelessness."},
+				{"category": "homeless", "title": "Preventing Homelessness in Peel ", "phone": "905-793-9200"},
+				{"category": "homeless", "title": "Regeneration Community Outreach", "phone": "905-796-5888","email":"info@regenbrampton.com","ShortText":"A self-help group for the homeless/marginalized population in Brampton. Coffee and light snacks are provided. Every Thursday, 11;30 sm - 1pm at St. Paul's United Church in the Community Room."},
+				{"category": "homeless", "title": "Torchlight Emergency Shelter Resource Line", "phone": "519-767-6594 (24/7)","email":"tprcj@ogjtcamada.org","ShortText":"Telephone service for anyone in need of a safe, emergency temporary shelter in Dufferin County."},
 				
 
 				{"category": "shelters", "title": "Lakeshore Community Outreach Centre, the Compass", "phone": "905-274-9309"},
@@ -231,8 +237,6 @@ var Data = CMHA.Data = (function () {
 
 
 				{"category": "informationReferral", "title": "Walk-Ins Welcome Hurontario Street, Brampton.", "phone": "314-7700"},
-
-
 
 				{"category": "informationReferral", "title": "211 Peel", "phone": "211"},
 				{"category": "informationReferral", "title": "Brampton Neighbourhood Resource Centre", "phone": "905-452-1262", "website":"bnrc.org"},
@@ -273,6 +277,19 @@ var Data = CMHA.Data = (function () {
 				{"category": "legalAdvocacy", "title": "Public Guardian and Trustee", "phone": "416-326-2220"},
 				{"category": "legalAdvocacy", "title": "Rexdale Community Legal Clinic", "phone": "416-741-5201"},
 				{"category": "legalAdvocacy", "title": "Your Legal Rights", "phone": "416-408-4420"},
+
+
+
+				{"category": "LGBTTIQQ2SA", "title": "LGBT Youth Line Chat online with someone Mon. -Fri. 4-9:30pm", "phone": "416-631-3614","website":"www.acetoronto.org","ShortText":"Chat online with someone Mon. - Fri. 4-9:30pm","featured":"true"},
+				{"category": "LGBTTIQQ2SA", "title": "OUTline", "phone": "1-800-282-4505","website":"www.qlinks.ca/outline","ShortText":"Supports LGBT community youth. Online chat open everyday from 5-10pm","featured":"true"},
+				{"category": "LGBTTIQQ2SA", "title": "Peel HIV/AIDS Network", "phone": "905-361-0523","mobile":"1-866-896-8700","email":"info@phan.ca","ShortText":"Supports LGBT community youth. Online chat open everyday from 5-10pm","featured":"true"},
+				{"category": "LGBTTIQQ2SA", "title": "PFLAG Canada", "phone": "1-888-530-6777","featured":"true"},
+				{"category": "LGBTTIQQ2SA", "title": "Positive Space Coalition Of Peel", "phone": "905-363-6131","mobile":"1-866-896-8700","email":"positivespacepeel@gmail.com","ShortText":"A collective of groups, agencies and individuals working to foster a community free of prejudice, that accepts and celebrates the diversity of lesbian, gay, bixexual, transexual, transgendered questioning and queer (LGBTTQQ) community in Peel. Call for meeting times and loctions.","featured":"true"},
+				{"category": "LGBTTIQQ2SA", "title": "Queer Exposure", "phone": "905-602-4082","mobile":"1-866-896-8700","website":"www.qxposure.blogspot.ca","ShortText":"Support services for lesbian, gay, bisexual,transgender, transsexual, intersex, queer, questioning and 2 spirit (LGBTTIQQ2S) adults (18 years +) in Peel Region."},
+				{"category": "LGBTTIQQ2SA", "title": "Transgender Health Care", "phone": "519-780-5298"},
+				{"category": "LGBTTIQQ2SA", "title": "Youth Beyond Barriers (YBB) / LGBTTIQQ2S", "phone": "905-602-4082 x4","website":"www.qxposure.blogspot.ca","ShortText":"youth, 12-17 years"},
+
+
 
 
 				{"category": "peerSupport","title": "Adult Children of Alcoholics", "phone": "416-631-3614" ,"website":"acetoronto.org", "ShortText":"Weekly meetings throughout the GTA."},
