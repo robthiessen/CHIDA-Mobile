@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cmha.app" version="3.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="https://phonegap.com/ns/1.0">
+<widget id="com.cmha.app" version="3.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="https://phonegap.com/ns/1.0">
     <name>CMHA Peel Dufferin</name>
     <description>
        CMHA Peel Dufferin
@@ -96,5 +96,21 @@
         
 -->
 </platform>
+ 
+
+    <platform name="windows">
+        <icon src="res/icon/windows/storelogo.png" target="StoreLogo"/>
+        <icon src="res/icon/windows/smalllogo.png" target="Square30x30Logo"/>
+        <icon src="res/icon/windows/Square44x44Logo.png" target="Square44x44Logo"/>
+        <icon src="res/icon/windows/Square70x70Logo.png" target="Square70x70Logo"/>
+        <icon src="res/icon/windows/Square71x71Logo.png" target="Square71x71Logo"/>
+        <icon src="res/icon/windows/Square150x150Logo.png" target="Square150x150Logo"/>
+        <icon src="res/icon/windows/Square310x310Logo.png" target="Square310x310Logo"/>
+
+        <splash src="res/screen/windows/splashscreen.png" target="SplashScreen"/>
+        <splash src="res/screen/windows/splashscreenphone.png" target="SplashScreenPhone"/>
+    </platform>
+    
+ 
 
 </widget>
